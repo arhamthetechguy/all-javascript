@@ -1,0 +1,39 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 70vh;
+}
+.calculator {
+  background-color: gray;
+  padding: 10px;
+  width: 300px;
+  border-radius: 5px;
+}
+#inputBox {
+  width: 100%;
+  height: 50px;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  font-size: 20px;
+  padding: 5px;
+  margin-bottom: 10px;
+}
+.btns {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 5px;
+}
+.btns button {
+  font-size: 20px;
+  padding: 10px;
+}
+
+/* clock */

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Words Counter</title>
+
+    <style>
+        body{
+            background-color: yellow;
+        }
+        h1{
+            font-size: 2rem;
+            text-align: center;
+        }
+        .app-box{
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+        }
+        textarea:focus{
+            outline: none;
+        }
+    </style>
+</head>
+<body>
+    <h1>Words Counter App</h1>
+
+
+    <section>
+        <div class="container">
+            <textarea class="input-box" name="" id="" cols="30" rows="10" placeholder="Start Writing.....✍"></textarea>
+        </div>
+        <div class="app-box">
+            <div class="counter-box">
+                <div class="words-heading">Character</div>
+                <div class="character-count">0</div>
+            </div>
+            <div class="counter-box">
+                <div class="words-heading">Words</div>
+                <div class="words-count">0</div>
+            </div>
+            <div class="counter-box">
+                <div class="twitter-heading">Twitter</div>
+                <div class="twitter-count">10</div>
+            </div>
+            <div class="counter-box">
+                <div class="linkedin-heading">Linkedin</div>
+                <div class="linkedin-count">20</div>
+            </div>
+        </div>
+    </section>
+    
+    <script src="app.js" ></script>
+</body>
+</html>

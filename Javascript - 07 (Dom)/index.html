@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM</title>
+
+    <style>
+        body{
+            background-color: rgb(155, 152, 152);
+        }
+        h1{
+            font-size: 2rem;
+            text-align: center;
+        }
+        .container{
+            width: 650px;
+            height: 70vh;
+            margin: auto;
+            padding: 10px;
+            border: 1px solid #dddddd;
+        }
+        h2{
+            font-size: 1.5rem;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+<h1>DOM Manupulation</h1>
+<div class="container">
+<h2>Calculator</h2>
+<input type="number" id="num1" placeholder="type your value">
+<input type="number" id="num2" placeholder="type your value">
+<br><br>
+<button id="add">Addition</button>
+<button id="subtract">Substraction</button>
+<button id="multiply">Multiplication</button>
+<button id="division">Division</button>
+<div>
+    <h3>Result: <span id="result">0</span></h3>
+</div>
+</div>
+
+<script>
+    let num1 = document.getElementById("num1");
+    let num2 = document.getElementById("num2");
+    // let result = document.getElementById("result");
+
+    let addBtn = document.getElementById("add");
+    let subtractBtn = document.getElementById("subtract");
+    let multiplyBtn = document.getElementById("multiply");
+    let divisionBtn = document.getElementById("division");
+
+    addBtn.addEventListener("click", () => {
+        result.innerHTML = parseInt(num1.value) + parseInt(num2.value);
+    });
+    subtractBtn.addEventListener("click", () => {
+        result.innerHTML = parseInt(num1.value) - parseInt(num2.value);
+    });
+    multiplyBtn.addEventListener("click", () => {
+        result.innerHTML = parseInt(num1.value) * parseInt(num2.value);
+    });
+    divisionBtn.addEventListener("click", () => {
+        result.innerHTML = parseInt(num1.value) / parseInt(num2.value);
+    });
+
+</script>
+
+<script src="dom.js "></script>
+</body>
+</html>

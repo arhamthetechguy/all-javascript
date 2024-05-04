@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GSAP</title>
+
+    <style>
+        nav{
+          height: 10vh;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          font-size: 2rem;
+        }
+        .logo{
+          overflow: hidden;
+        }
+        .hero-img{
+          object-fit: cover;
+        }
+        .group{
+          position: absolute;
+          top: 40%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          overflow: hidden;
+        }
+        .group-text span{
+          font-size: 50px;
+          color: white;
+          display: block;
+          padding: 0px 10px;
+        }
+        .group-text{
+          display: flex;
+        }
+        .group-text h2{
+          overflow: hidden;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+      <div class="logo">Nature Nature Nature Nature Nature Nature </div>
+    </nav>
+
+    <section>
+      <div class="hero-section">
+        <img src="ss/nature.png" alt="hero-img" class="hero-img">
+        <div class="group">
+          <div class="group-text">
+            <h2><span class="gtext1">The</span></h2>
+            <h2><span class="gtext2">The</span></h2>
+            <h2><span class="gtext3">Nature</span></h2>
+          </div>
+          <div class="group-text">
+            <h2><span class="gtext4">Feel</span></h2>
+            <h2><span class="gtext5">The</span></h2>
+            <h2><span class="gtext6">Nature</span></h2>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js" integrity="sha512-16esztaSRplJROstbIIdwX3N97V1+pZvV33ABoG1H2OyTttBxEGkTsoIVsiP1iaTtM8b3+hu2kB6pQ4Clr5yug==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+   <script src="gsap.js"></script>
+</body>
+</html>

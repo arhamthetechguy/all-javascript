@@ -1,0 +1,53 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  margin: 10px 20px;
+}
+img {
+  width: 250px;
+}
+
+#productCard {
+  margin-top: 20px;
+  width: 300px;
+  border: 1px solid #ddd;
+  padding: 10px;
+}
+input {
+  width: 300px;
+  height: 40px;
+  padding: 10px;
+  margin-bottom: 10px;
+  outline: none;
+  display: block;
+}
+textarea {
+  min-width: 300px;
+  max-width: 300px;
+  min-height: 100px;
+  max-height: 100px;
+  padding: 10px;
+  margin-bottom: 10px;
+  outline: none;
+  display: block;
+}
+form button {
+  width: 300px;
+  padding: 10px;
+}
+form {
+  margin-bottom: 50px;
+}
+#productCard button {
+  padding: 5px 10px;
+  width: 280px;
+  margin-top: 10px;
+  cursor: pointer;
+}
+#root {
+  display: flex;
+  gap: 10px;
+}

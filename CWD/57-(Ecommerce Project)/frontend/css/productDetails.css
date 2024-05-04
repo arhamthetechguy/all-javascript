@@ -1,0 +1,9 @@
+.productDetails {
+  background-color: #f8f8f8;
+}
+#product-details img {
+  max-width: 100%;
+}
+#product-details a button {
+  font-size: 16px;
+}

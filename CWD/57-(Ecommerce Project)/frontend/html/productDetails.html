@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ecommerce Project</title>
+    <link rel="stylesheet" href="../css/common.css" />
+    <link rel="stylesheet" href="../css/productDetails.css" />
+    <!-- bootstrap 5 cdn link -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <!-- header section -->
+    <header class="sticky-top">
+      <div class="header container">
+        <div class="logo">
+          <a class="text-decoration-none text-dark" href="./"
+            ><img src="../img/logo.png" alt=""
+          /></a>
+        </div>
+        <div class="navbar">
+          <nav>
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="products.html">Products</a></li>
+              <li><a href="">Categories</a></li>
+              <li><a href="dashboard.html">Dashboard</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <!-- All products -->
+      <section class="productDetails">
+        <div class="container pb-5">
+          <div class="row">
+            <div class="col-md-2"></div>
+            <div class="col-md-8">
+              <h3 class="text-center pt-5 pb-4 fw-medium">
+                Product Details
+              </h3>
+              <div id="single-product"></div>
+            </div>
+            <div class="col-md-2"></div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- footer section -->
+    <footer class="py-5">
+      <div class="container">
+        <div class="footer-section">
+          <div>
+            <h4>About us</h4>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nec
+              ante eu nisl fermentum sagittis.
+            </p>
+          </div>
+          <div>
+            <h4>Quick Links</h4>
+            <ul class="list-unstyled">
+              <li><a href="#">T-Shirt</a></li>
+              <li><a href="#">Pants</a></li>
+              <li><a href="#">Three-piece</a></li>
+              <li><a href="#">Watches</a></li>
+            </ul>
+          </div>
+          <div>
+            <h4>Customer Care</h4>
+            <ul class="list-unstyled">
+              <li><a href="#">Help Center</a></li>
+              <li><a href="#">Contact Us</a></li>
+              <li><a href="#">Terms & Conditions</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script type="module" src="../js/productDetails.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

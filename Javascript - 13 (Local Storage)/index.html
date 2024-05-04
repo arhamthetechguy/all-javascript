@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Local Storage</title>
+
+    <style>
+        body{
+            background-color: yellow;
+        }
+        h1{
+            font-size: 2rem;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>Local Storage</h1>
+
+    <section>
+      <form id="lform">
+        <label>Type</label>
+        <input id="input-value" type="text" placeholder="Type anything...">
+      </form>
+      <h4 id="task-heading">Change Me</h4>
+
+    </section>
+
+
+    <!-- <script src="lstorage.js"></script> -->
+    <script>
+      const lForm = document.getElementById("lform");
+      const inputValue = document.getElementById("input-value");
+      const outPutItem = document.getElementById("task-heading");
+      
+      let itemAray = localStorage.getItem("valueInput") ? JSON.parse(localStorage.getItem("valueInput")) : [];
+
+      console.log(itemAray);
+
+      lForm.addEventListener("submit", (e) => {
+        e.preventDefault();
+
+        let item = inputValue.value;
+        outPutItem.innerHTML = item;
+
+        localStorage.setItem("valueInput", item);
+      });
+
+    </script>
+</body>
+</html>

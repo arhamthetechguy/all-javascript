@@ -1,0 +1,11 @@
+#slider-section img {
+  max-width: 100%;
+}
+
+/* slider icon */
+.carousel-control-next-icon,
+.carousel-control-prev-icon {
+  width: 4rem !important;
+  height: 4rem !important;
+  background-color: rgb(194, 194, 194);
+}

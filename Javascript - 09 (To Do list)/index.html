@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To do list</title>
+
+    <style>
+        .container{
+            width: 600px;
+            margin: auto;
+        }
+        #inputed-task{
+            border: none;
+        }
+        .content{
+            display: flex;
+            gap: 10px;
+            width: 260px;
+            border: 1px solid #555555;
+            padding: 8px 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>To do list</h1>
+            <form id="task-form">
+                <input type="text" placeholder="Add your first task" id="task-input">
+                <input type="submit" value="Add task" id="task-submit">
+            </form>
+    </div>
+    <section class="container">
+        <h2>All tasks</h2>
+        <div class="tasks">
+            <!-- <div class="content">
+                <input type="text" value="a new task" readonly>
+                <div class="actions">
+                    <button class="edit">Edit</button>
+                    <button class="delete">Delete</button>
+                </div>
+            </div> -->
+        </div>
+    </section>
+
+    <script src="app.js" ></script>
+</body>
+</html>

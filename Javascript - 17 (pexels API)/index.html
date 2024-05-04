@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pexels Api</title>
+
+    <style>
+      #gallery-wrapper{
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+      }
+
+      .images-gallery img{
+        max-width: 100%;
+        height: 100%;;
+      }
+    </style>
+
+</head>
+<body>
+   <form id="search-form" style="margin-top: 50px;">
+    <input id="search-input" type="text">
+    <button id="search-btn" type="submit">Search</button>
+   </form> 
+
+   <section style="margin-top: 200px;" >
+    <div id="gallery-wrapper">
+      <!-- <div class="images-gallery">
+        <img src="" alt="">
+        <button id="download-btn" >Download</button>
+        <p></p>
+      </div> -->
+    </div>
+   </section>
+
+
+   <script src="pexelapi.js"></script>
+
+</body>
+</html>

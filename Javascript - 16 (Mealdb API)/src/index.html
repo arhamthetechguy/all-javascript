@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mealdb Api</title>
+    <link rel="stylesheet" href="../dist/output.css">
+
+    <style>
+        .popup-wrapper{
+            width: 400px;
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 100%;
+            width: 100%;
+            background: rgba(0, 0, 0, 0.658);
+            padding: 80px;
+            display: none;
+            position: fixed;
+            border-radius: 20px;
+        }
+        .popup-content{
+            padding: 20px;
+        }
+    </style>
+</head>
+<body class="bg-sky-950" >
+    <section>
+        <div class="containe mx-auto">
+            <h1 class="text-4xl text-center text-red-50 font-bold py-5" >Searh for a meal🔍</h1>
+        </div>
+    </section>
+    <section>
+        <div class="container">
+            <div class="search-box text-center bg-white px-4 py-2 w-1/2 mx-auto flex justify-between">
+                <input class="w-full" rounded" id="search-input" type="text" placeholder="Example....Fish" value="meal">
+                <button class="bg-yellow-500 rounded" id="search-btn">Search</button>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="container mt-10 mx-auto border border-gray-400">
+            <h2 id="search-heading" class="text-3xl font-semibold text-yellow-50 text-center py-6" >No meals found 😞</h2>
+            <div class="meal-wrapper p-6 grid grid-cols-3 gap-5">
+                    <!-- <div class="meal-box border p-2">
+                        <img src="meal.jpg" alt="">
+                        <h2 class="text-2xl font-semibold  text-gray-200">Meal heading</h2>
+                        <p class="text-gray-400" >Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sit dignissimos molestias officiis animi mollitia consectetur incidunt ullam quam. Rerum, similique!</p>
+                        <span class="text-slate-500" >meal id/tag</span>
+                        <div class="buttons flex gap-1 mt-1">
+                            <a class="bg-yellow-400 p-1 rounded block" >Watch</a>
+                            <button class="bg-white p-1 rounded" >Details</button>
+                        </div>
+                    </div> -->
+            </div>
+        </div>
+        <div class="popup-wrapper invisible opacity-0" id="close-popup">
+            <!-- <div class="popup-content bg-white">
+                <h2></h2>
+                <p>lorem in natus officiis vitae repudiandae sequi mollitia sint ex.</p>
+                <button id="popup-btn" class="bg-yellow-400 p-1 rounded" >Watch</button>
+                <button id="close-btn" >close</button>
+            </div> -->
+        </div>
+    </section>
+    <script src="mealapi.js"></script>
+</body>
+</html>
